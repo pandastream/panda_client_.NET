@@ -46,4 +46,4 @@ Get a cloud by cloudId
 Credits
 ------
 This library has been written by Mark Bonano (Applications Architect, Chazmar Solutions LLC). Thanks to him for the great work.
-If some functionalities are missing, please fork the project!!
+If some functioality are missing, please fork the project!!
