@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1031]C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda.Tests\bin\Debug\Panda.Tests.dll</TopNode>
+  <SelectedNode>[0-1034]Panda.Tests.Core</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1031]C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda.Tests\bin\Debug\Panda.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1032]Panda" Expanded="true" />
+    <Node UniqueName="[0-1033]Panda.Tests" Expanded="true" />
+    <Node UniqueName="[0-1034]Panda.Tests.Core" Expanded="true" />
+    <Node UniqueName="[0-1014]Panda.Tests.Core.ServiceProxyTests" Expanded="true" />
+    <Node UniqueName="[0-1028]Panda.Tests.Core.ServiceProxyUtilityTests" Expanded="true" />
+    <Node UniqueName="[0-1000]Panda.Tests.Core.ServiceRequestTests" Expanded="true" />
+  </Nodes>
+</VisualState>

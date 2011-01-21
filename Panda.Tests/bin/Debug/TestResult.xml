@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda.Tests\bin\Debug\Panda.Tests.dll" total="41" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-01-20" time="13:02:24">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.4952" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files\Common Files\Adobe\Adobe Version Cue CS4\Client\4.0.1" machine-name="INTERACT_7D_MB" user="mbonano" user-domain="DLRYAN" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda.Tests\bin\Debug\Panda.Tests.dll" executed="True" result="Success" success="True" time="0.196" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Panda" executed="True" result="Success" success="True" time="0.191" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.189" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Core" executed="True" result="Success" success="True" time="0.165" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="ServiceProxyTests" executed="True" result="Success" success="True" time="0.139" asserts="0">
+                    <results>
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.ApiUrl_DefaultPortAndVersionUsed_ReturnsFullApiUrl" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.ApiUrl_SuppliedPortAndVersionUsed_ReturnsFullApiUrl" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.BuildRequest_GETRequestDataSupplied_ReturnsValidIPandaServiceRequest" executed="True" result="Success" success="True" time="0.043" asserts="5" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.BuildRequest_POSTRequestDataSupplied_ReturnsValidIPandaServiceRequest" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.BuildRequest_PUTRequestDataSupplied_ReturnsValidIPandaServiceRequest" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.Delete_ValidParametersSupplied_SendRequestSendMethodIsCalled" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.Get_ValidGETRequestDataSupplied_SendRequestSendMethodIsCalled" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.Post_FileDataSupplied_ServiceRequestPopulatedWithFileData" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.Post_ValidPOSTRequestDataSupplied_SendRequestSendMethodIsCalled" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.SendRequest_ValidRequestDataSupplied_SendRequestIsCalled" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.SignatureGenerator_ValidRequestDataSupplied_ReturnsValidSignature" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.SignatureGenerator_ValidRequestDataSupplied_UtilityEncodeMethodCalled" executed="True" result="Success" success="True" time="0.013" asserts="0" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyTests.StringToSign_ValidRequestDataSupplied_ReturnsValidStringToSign" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ServiceProxyUtilityTests" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                    <results>
+                      <test-case name="Panda.Tests.Core.ServiceProxyUtilityTests.EncodeStringToHMACSHA256_ValidStringAndKeySupplied_ReturnsEncodedData" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceProxyUtilityTests.GetPandaTimestamp_ValidDateTimeSupplied_EncodesDateTime" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ServiceRequestTests" executed="True" result="Success" success="True" time="0.018" asserts="0">
+                    <results>
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.HasDataToSend_GETRequestDefined_ReturnsFalse" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.HasDataToSend_POSTRequestDefined_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.HasDataToSend_PUTRequestDefined_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.IsFilePosted_RequiredDataMissing_ReturnsFalse" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.IsFilePosted_RequiredDataSupplied_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.IsValidForSubmission_NoBaseUrlSupplied_ReturnsCorrectMessage" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.IsValidForSubmission_NoDataSupplied_ReturnsFalse" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.IsValidForSubmission_NoSignedParametersSupplied_ReturnsCorrectMessage" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.IsValidForSubmission_NoVerbSupplied_ReturnsCorrectMessage" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.IsValidForSubmission_RequiredDataSupplied_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.Url_GETRequestDefined_ConcatenatesParametersToTheUrl" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.Url_POSTRequestDefined_ReturnUrlWithNoAppendedParameters" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Panda.Tests.Core.ServiceRequestTests.Url_PUTRequestDefined_ReturnUrlWithNoAppendedParameters" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="VideoServiceTests" executed="True" result="Success" success="True" time="0.018" asserts="0">
+                <results>
+                  <test-case name="Panda.Tests.VideoServiceTests.DeleteVideo_VideoIdSupplied_CallsProxyMethodWithCorrectParameters" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetCloud_CloudIdSupplied_CallsProxyMethodWithCorrectParameters" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetCloud_CloudIdSupplied_CallsSerializer" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetVideo_VideoIdSupplied_CallsProxyMethodWithCorrectParameters" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetVideo_VideoIdSupplied_CallsSerializer" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetVideoEncodings_VideoIdSupplied_CallsProxyMethodWithCorrectParameters" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetVideoEncodings_VideoIdSupplied_CallsSerializer" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetVideos_WhenCalled_CallsProxyMethodWithCorrectParameters" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.GetVideos_WhenCalled_CallsSerializer" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.UploadVideo_FileDataSupplied_CallsProxyMethodWithCorrectParameters" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.UploadVideo_FileDataSupplied_CallsSerializer" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.UploadVideo_VideoUrlSupplied_CallsProxyMethodWithCorrectParameters" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                  <test-case name="Panda.Tests.VideoServiceTests.UploadVideo_VideoUrlSupplied_CallsSerializer" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,13 @@
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\bin\Debug\Panda.dll
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\bin\Debug\Panda.pdb
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\obj\Debug\ResolveAssemblyReference.cache
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\obj\Debug\Panda.dll
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\obj\Debug\Panda.pdb
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\bin\Debug\Newtonsoft.Json.dll
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\bin\Debug\Newtonsoft.Json.pdb
+C:\work\libraries\Panda.IntegrationTests\Panda\Panda\bin\Debug\Newtonsoft.Json.xml
+C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda\bin\Debug\Panda.dll
+C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda\bin\Debug\Panda.pdb
+C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda\obj\Debug\ResolveAssemblyReference.cache
+C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda\obj\Debug\Panda.dll
+C:\idirect-tfs\Ryan\ThirdParty\Pandastream\Main\Panda\obj\Debug\Panda.pdb
