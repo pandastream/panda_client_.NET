@@ -43,6 +43,7 @@ Get a cloud by cloudId
  
     Panda.Domain.Cloud cloud = videoService.GetCloud("cloudId");
     
-    
+Credits
+------
 This library has been written by Mark Bonano (Applications Architect, Chazmar Solutions LLC). Thanks to him for the great work.
 If some functionalities are missing, please fork the project!!
