@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Web.Script.Serialization;
 using Panda.Core;
 using Panda.Domain;
@@ -59,10 +59,35 @@ namespace Panda.Services
             {
                 _serializer = value;
             }
-        } 
+        }
+
+        /// <summary>
+        /// Gets the underlying ServiceProxy object which serves as a proxy for Panda web service requests.
+        /// </summary>
+        public IServiceProxy ServiceProxy
+        {
+            get
+            {
+                return _proxy;
+            }
+        }
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Will create a network proxy assigned to the underlying HTTP request using the supplied
+        /// host, port and network credentials.
+        /// </summary>
+        /// <param name="webProxyHost">The proxy host</param>
+        /// <param name="webProxyPort">The proxy port</param>
+        /// <param name="username">The user name associated with the network credentials</param>
+        /// <param name="password">The password associated with the network credentials</param>
+        public void SetWebProxyCredentials(string webProxyHost, int webProxyPort,
+            string username, string password)
+        {
+            _proxy.SetWebProxyCredentials(webProxyHost, webProxyPort, username, password);
+        }
+
         /// <summary>
         /// Returns a list of videos associated with the cloudId and accessKey supplied to the VideoService
         /// </summary>
