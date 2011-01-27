@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -93,6 +93,13 @@ namespace Panda.Core
             }
         }
 
+        /// <summary>
+        /// If a network proxy is defined, it will be assigned to the underlying HTTP request. This property
+        /// is usually utilized for allow for network credentials to be passed along with the HTTP request
+        /// to the panda service.
+        /// </summary>
+        public IWebProxy Proxy { get; set; }
+
         private NameValueCollection _parameters;
         private NameValueCollection Parameters
         {
@@ -123,6 +130,8 @@ namespace Panda.Core
         private WebRequest CreateFormUrlEncodedRequest()
         {
             var request = WebRequest.Create(new Uri(Url));
+            if (Proxy != null)
+                request.Proxy = Proxy;
             request.Method = Verb;
 
             // if request must data to send, write the data to the request's content stream
@@ -147,6 +156,8 @@ namespace Panda.Core
 
             // instantiate the request
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url);
+            if (Proxy != null)
+                request.Proxy = Proxy;
             request.ContentType = "multipart/form-data; boundary=" + boundary;
             request.Method = "POST";
             request.KeepAlive = true;
