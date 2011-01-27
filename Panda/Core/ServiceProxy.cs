@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -84,7 +84,19 @@ namespace Panda.Core
         public string ApiUrl
         {
             get { return string.Format("http://{0}{1}", ApiHostAndPort, ApiBasePath); }
-        } 
+        }
+
+        /// <summary>
+        /// Gets the underlying ServiceRequest object responsible for creating the HTTP request that will
+        /// be sent to the Panda Service
+        /// </summary>
+        public IServiceRequest ServiceRequest
+        {
+            get
+            {
+                return _serviceRequest;
+            }
+        }
         #endregion
 
         #region Request Methods
@@ -196,6 +208,33 @@ namespace Panda.Core
             return stIn.ReadToEnd();
         }
 
+        #endregion
+
+        #region Proxy Configuration Methods
+        /// <summary>
+        /// Will create a network proxy assigned to the underlying HTTP request using the supplied
+        /// host, port and network credentials.
+        /// </summary>
+        /// <param name="webProxyHost">The proxy host</param>
+        /// <param name="webProxyPort">The proxy port</param>
+        /// <param name="username">The user name associated with the network credentials</param>
+        /// <param name="password">The password associated with the network credentials</param>
+        public void SetWebProxyCredentials(string webProxyHost, int webProxyPort,
+            string username, string password)
+        {
+            // create the web proxy used by the http request when submitted
+            _serviceRequest.Proxy =
+                new WebProxy(webProxyHost, webProxyPort)
+                {
+                    Credentials = new NetworkCredential(username, password)
+                };
+
+            // The .NET framework will, by default, add headers to PUT and POST requests to expect a
+            // 100 response code from the responding server. The combination of this header with the use
+            // of a web proxy may cause Panda's servers to return status code 417 - Expectation Failed.
+            // In order to prevent this, the additional header is removed.
+            ServicePointManager.Expect100Continue = false;
+        } 
         #endregion
 
         #region Request Construction Methods
