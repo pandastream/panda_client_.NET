@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Net;
 namespace Panda.Core
 {
     public interface IServiceRequest
@@ -8,6 +9,7 @@ namespace Panda.Core
         string SignedParameters { get; set; }
         string FileName { get; set; }
         byte[] File { get; set; }
+        IWebProxy Proxy { get; set; }
 
         bool IsFilePosted { get; }
         bool IsValidForSubmission(out string brokenRulesMessage);
