@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace Panda.Core
 {
     public interface IServiceProxy
@@ -18,6 +18,8 @@ namespace Panda.Core
         System.Net.HttpWebResponse Put(string path, System.Collections.Generic.Dictionary<string, string> parameters);
         string PutJson(string path, System.Collections.Generic.Dictionary<string, string> parameters);
         System.Net.HttpWebResponse SendRequest(string verb, string path, System.Collections.Generic.Dictionary<string, string> parameters);
+        IServiceRequest ServiceRequest { get; }
+        void SetWebProxyCredentials(string webProxyHost, int webProxyPort, string username, string password);
         string SignatureGenerator(string verb, string requestPath, string host, string secretKey, System.Collections.Generic.Dictionary<string, string> parameters);
         string StringToSign(string verb, string requestPath, string host, System.Collections.Generic.Dictionary<string, string> parameters);
     }
