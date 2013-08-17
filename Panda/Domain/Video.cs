@@ -15,7 +15,7 @@ namespace Panda.Domain
         public int? thumbnail_position { get; set; }
         public int? height { get; set; }
         public int? width { get; set; }
-        public int? fps { get; set; }
+        public float? fps { get; set; }
         public int? duration { get; set; }
         public long? file_size { get; set; }
         public DateTime created_at { get; set; }
